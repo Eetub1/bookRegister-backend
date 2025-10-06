@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const bookSchema = mongoose.Schema({
     title: String,
     author: String,
-    year: Number
+    year: Number,
+    pages: Number,
 })
 
 bookSchema.set('toJSON', {

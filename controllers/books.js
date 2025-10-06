@@ -10,10 +10,12 @@ booksRouter.get('/', async (request, response) => {
 booksRouter.post('/', async (request, response) => {
     const body = request.body
 
+    console.log(body)
+
     const book = new Book({
         title: body.title,
         author: body.author,
-        year: body.author
+        year: body.year
     })
 
     const savedBook = await book.save()
