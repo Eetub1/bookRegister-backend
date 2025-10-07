@@ -28,7 +28,7 @@ loginRouter.post('/', async (request, response) => {
   )
 
   //this may need to be updated later to include username or something like that
-  response.status(200).send({ token })
+  response.status(200).send({ token, username })
 })
 
 module.exports = loginRouter
